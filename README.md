@@ -19,3 +19,10 @@ react-demo/vite.config.ts 中添加了 alias ，vite 监听源文件变化，触
 ## 生产环境
 
 必须通过 pnpm install --force 进行强制刷新 软连接
+
+## eslint 
+
+增加 eslint 检查，在根目录下可以检查子项目内的代码
+
+使用 pnpm lint 进行格式校验
+使用 pnpm lint:fix 进行格式修复

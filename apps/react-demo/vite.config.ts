@@ -10,7 +10,7 @@ export default defineConfig(({ mode }) => {
     plugins: [react()],
     resolve: {
       alias: isDev ? {
-        '@my-org/ui': resolve(__dirname, '../../packages/ui/src'), // 开发环境使用软连接
+        '@my-org/ui': resolve(import.meta.dirname, '../../packages/ui/src'), // 开发环境使用软连接
       } : undefined,
     },
     build: {

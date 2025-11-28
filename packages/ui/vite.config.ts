@@ -6,7 +6,7 @@ import dts from 'vite-plugin-dts';
 export default defineConfig({
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: resolve(import.meta.dirname, 'src/index.ts'),
       name: 'MyUI',
       formats: ['es', 'cjs'],
       // 👇 强制输出文件名为 index.js / index.mjs
@@ -19,5 +19,5 @@ export default defineConfig({
       }
     }
   },
-  plugins: [dts({ rollupTypes: false, tsconfigPath: resolve(__dirname, 'tsconfig.json') })]
+  plugins: [dts({ rollupTypes: false, tsconfigPath: resolve(import.meta.dirname, 'tsconfig.json') })]
 });
