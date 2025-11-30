@@ -3,10 +3,10 @@ import './App.css'
 import { Button } from '@my-org/ui'
 
 function App() {
-
+  const hello = "hello world"
   return (
     <>
-      <Button>Hello from UI Lib!</Button>
+      <Button>{hello} from UI Lib!</Button>
     </>
   )
 }
