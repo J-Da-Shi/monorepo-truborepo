@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "check-types": "tsc --noEmit",
+    "check:types": "tsc -b",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "prepare": "husky install"

@@ -1,4 +1,3 @@
-import './App.css';
 import { Button } from '@my-org/ui';
 
 function App() {
