@@ -1,7 +1,6 @@
 {
   "extends": "../../tsconfig.json",
   "files": [],
-  "references": [{ "path": "./tsconfig.node.json" }],
   "compilerOptions": {
     "paths": {
       "@my-org/ui": ["../../packages/ui/src/index.ts"]
